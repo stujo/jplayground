@@ -1,3 +1,45 @@
 // Place all the styles related to the playgrounds controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.thing {
+  padding: 20px;
+  text-align: center;
+  font-size: 2em;
+  color: #333333;
+}
+
+.red_bucket {
+  border: 4px solid red;
+  border-top: none;
+  width: 180px;
+  float: right;
+}
+
+.jplay_red {
+  background-color: lightcoral;
+}
+
+.jplay_green {
+  background-color: lawngreen;
+}
+
+.jplay_blue {
+  background-color: deepskyblue;
+}
+
+.thing_of_interest, .btn.thing_of_interest {
+  border: 2px solid #333333;
+}
+
+.ball {
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  background-image: -moz-radial-gradient(45px 45px 45deg, circle cover, yellow 0%, orange 100%, red 95%);
+  background-image: -webkit-radial-gradient(45px 45px, circle cover, yellow, orange);
+  background-image: radial-gradient(45px 45px 45deg, circle cover, yellow 0%, orange 100%, red 95%);
+  float: left;
+}
+

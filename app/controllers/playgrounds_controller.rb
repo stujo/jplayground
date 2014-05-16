@@ -4,7 +4,7 @@ class PlaygroundsController < ApplicationController
     @playgrounds = PLAYGROUNDS
   end
 
-  PLAYGROUNDS = {:prek => 'Pre-K', :junior => 'Junior'}
+  PLAYGROUNDS = {:prek => 'Pre-K', :kindergarden => 'Kindergarden', :junior => 'Junior'}
 
   PLAYGROUNDS.each do |key, value|
     define_method(key) do
@@ -27,7 +27,8 @@ class PlaygroundsController < ApplicationController
 
     unless File.exist?(css_filename)
       File.open css_filename, 'w' do |f|
-        f.write "/* CSS for playground: #{value} */\n\n"
+        f.write  '"use strict;"'
+        f.write "\n\n/* CSS for playground: #{value} */\n\n"
       end
     end
 
