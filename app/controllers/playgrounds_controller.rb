@@ -11,18 +11,10 @@ class PlaygroundsController < ApplicationController
       @title = value
       @playgrounds = PLAYGROUNDS
       @playground_name = key
-      render key
+      render "playgrounds/grounds/#{key}"
     end
 
-    view_filename = Rails.root.join("app", "views", "playgrounds", "#{key}.html.erb")
-    unless File.exist?(view_filename)
-      File.open view_filename, 'w' do |f|
-        f.write "<h1>#{value}</h1>\n\n"
-        f.write "<div>Make your playground by editting #{view_filename}</div>\n\n"
-      end
-    end
-
-    js_filename = Rails.root.join("app", "assets", "javascripts", "#{key}.js")
+    js_filename = Rails.root.join("app", "assets", "javascripts", "grounds", "#{key}.js")
 
     unless File.exist?(js_filename)
       File.open js_filename, 'w' do |f|
@@ -31,12 +23,25 @@ class PlaygroundsController < ApplicationController
       end
     end
 
-    css_filename = Rails.root.join("app", "assets", "stylesheets", "#{key}.css.scss")
+    css_filename = Rails.root.join("app", "assets", "stylesheets", "grounds", "#{key}.css.scss")
 
     unless File.exist?(css_filename)
       File.open css_filename, 'w' do |f|
         f.write "/* CSS for playground: #{value} */\n\n"
       end
     end
+
+    view_filename = Rails.root.join("app", "views", "playgrounds", "grounds", "#{key}.html.erb")
+    unless File.exist?(view_filename)
+      File.open view_filename, 'w' do |f|
+        f.write "<h1>#{value}</h1>\n\n"
+        f.write "<ul>\n"
+        f.write "<li>Make your playground by editing #{view_filename}</li>\n\n"
+        f.write "<li>Edit your javascript here #{js_filename}</li>\n\n"
+        f.write "<li>Edit your CSS here #{css_filename}</li>\n\n"
+        f.write "</ul>\n"
+      end
+    end
+
   end
 end
