@@ -5,7 +5,9 @@
   <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%# LOAD PAGE (PLAYGROUND) SPECIFIC JAVASCRIPT %>
-  <%= javascript_include_tag @playground_name unless  @playground_name.blank? %>
+  <% unless  @playground_name.blank? %>
+      <script type="text/javascript" async="" src="/assets/javascripts/<%= @playground_name %>"></script>
+  <% end %>
   <%= csrf_meta_tags %>
 </head>
 <body>
@@ -30,7 +32,7 @@
           <a href="#" class="dropdown-toggle" data-toggle="dropdown">Playgrounds <b class="caret"></b></a>
           <ul class="dropdown-menu">
             <% @playgrounds.each do |path, title| %>
-                <li><%= link_to title, '/' + path.to_s  %></li>
+                <li><%= link_to title, '/' + path.to_s %></li>
             <% end %>
           </ul>
         </li>
