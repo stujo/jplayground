@@ -25,7 +25,7 @@ class PlaygroundsController < ApplicationController
     js_filename = Rails.root.join("app", "assets", "javascripts", "#{key}.js")
 
     unless File.exist?(js_filename)
-      File.open view_filename, 'w' do |f|
+      File.open js_filename, 'w' do |f|
         f.write "/* Javascript for playground: #{value} */\n\n"
         f.write "$( document ).ready(function() {\n\n\n// Your Code Here\n\n\n});\n\n"
       end
