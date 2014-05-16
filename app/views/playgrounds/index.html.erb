@@ -1,0 +1,5 @@
+<h1>Playgrounds</h1>
+
+<% @playgrounds.each do |path, title| %>
+    <li><%= link_to title, '/' + path.to_s  %></li>
+<% end %>

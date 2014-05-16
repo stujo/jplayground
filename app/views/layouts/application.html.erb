@@ -4,6 +4,8 @@
   <title>Jplayground</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%# LOAD PAGE (PLAYGROUND) SPECIFIC JAVASCRIPT %>
+  <%= javascript_include_tag  @playground_name unless  @playground_name.blank? %>
   <%= csrf_meta_tags %>
 </head>
 <body>
