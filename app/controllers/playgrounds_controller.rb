@@ -14,6 +14,7 @@ class PlaygroundsController < ApplicationController
         view_filename = Rails.root.join("app", "views", params[:controller], "#{key}.html.erb")
         File.open view_filename, 'w' do |f|
           f.write "<h1>#{value}</h1>\n\n"
+          f.write "<div>Make your playground by editting #{view_filename}</div>\n\n"
         end
       end
       render key

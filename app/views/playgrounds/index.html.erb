@@ -1,5 +1,9 @@
-<h1>Playgrounds</h1>
 
+<h1 class="page-heading">Playgrounds</h1>
+
+
+<ul>
 <% @playgrounds.each do |path, title| %>
     <li><%= link_to title, '/' + path.to_s  %></li>
 <% end %>
+</ul>
