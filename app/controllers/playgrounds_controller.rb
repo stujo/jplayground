@@ -30,5 +30,13 @@ class PlaygroundsController < ApplicationController
         f.write "$( document ).ready(function() {\n\n\n// Your Code Here\n\n\n});\n\n"
       end
     end
+
+    css_filename = Rails.root.join("app", "assets", "stylesheets", "#{key}.css.scss")
+
+    unless File.exist?(css_filename)
+      File.open css_filename, 'w' do |f|
+        f.write "/* CSS for playground: #{value} */\n\n"
+      end
+    end
   end
 end

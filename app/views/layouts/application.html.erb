@@ -4,10 +4,6 @@
   <title>Jplayground</title>
   <%= stylesheet_link_tag 'application', media: 'all' %>
   <%= javascript_include_tag 'application' %>
-  <%# LOAD PAGE (PLAYGROUND) SPECIFIC JAVASCRIPT %>
-  <% unless  @playground_name.blank? %>
-      <script type="text/javascript" async="" src="/assets/javascripts/<%= @playground_name %>"></script>
-  <% end %>
   <%= csrf_meta_tags %>
 </head>
 <body>
@@ -42,7 +38,7 @@
   </div>
 </div>
 
-<div class="container">
+<div class="container <%= @playground_name %>">
   <%= yield %>
 </div>
 </body>
