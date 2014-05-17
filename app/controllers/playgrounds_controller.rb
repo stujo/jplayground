@@ -4,7 +4,7 @@ class PlaygroundsController < ApplicationController
     @playgrounds = PLAYGROUNDS
   end
 
-  PLAYGROUNDS = {:prek => 'Pre-K', :kindergarden => 'Kindergarden', :junior => 'Junior'}
+  PLAYGROUNDS = {:prek => 'Pre-K', :kindergarden => 'Kindergarden', :junior => 'Junior', :senior => 'Senior'}
 
   PLAYGROUNDS.each do |key, value|
     define_method(key) do
@@ -18,6 +18,7 @@ class PlaygroundsController < ApplicationController
 
     unless File.exist?(js_filename)
       File.open js_filename, 'w' do |f|
+        f.write  '"use strict;"'
         f.write "/* Javascript for playground: #{value} */\n\n"
         f.write "$( document ).ready(function() {\n\n\n// Your Code Here\n\n\n});\n\n"
       end
@@ -27,7 +28,6 @@ class PlaygroundsController < ApplicationController
 
     unless File.exist?(css_filename)
       File.open css_filename, 'w' do |f|
-        f.write  '"use strict;"'
         f.write "\n\n/* CSS for playground: #{value} */\n\n"
       end
     end
