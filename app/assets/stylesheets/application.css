@@ -15,8 +15,17 @@
  *= require_self
  */
 
+
+/*
+* http://webdesign.tutsplus.com/articles/quick-tip-dont-forget-the-viewport-meta-tag--webdesign-5972
+* */
+@viewport{
+    zoom: 1.0;
+    width: extend-to-zoom;
+}
+
+
 /* BootStrap Nav*/
 body {
-    min-height: 2000px;
     padding-top: 70px;
 }
