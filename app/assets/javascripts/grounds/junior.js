@@ -4,19 +4,20 @@ $( document ).ready(function() {
   /*
    A) Beginning Buttons!
 
-   1) Find the button with id junior_show_and_tell and assign it button and give it the thing_of_interest css class
+   1) Find the button with id junior_show_and_tell and assign it to button and give it the thing_of_interest css class
    */
 
+  var button = null;
   //TODO: HERE
 
+  /*
+   2) Assign the say_hello function to the click handler of the button
+  */
   function say_hello()
   {
     alert('Hey! I\'m Telling!');
   }
 
-  /*
-   2) Assign the say_hello function to the click handler of the button
-  */
 
   //TODO: HERE
 
@@ -25,8 +26,8 @@ $( document ).ready(function() {
   */
 
   /*
-  4) Complete the Anonymous function of the fixer_button below to set the class
-  of should_be_green to jplay_green AND change it's content to be "I'm Green"
+  4) Complete the Anonymous function of the fixer_button click event below to set the class
+  of the element should_be_green to jplay_green, AND change it's content to be "I'm Green"
   */
 
   var fixer_button = $('#junior_fix_green');
@@ -54,7 +55,7 @@ $( document ).ready(function() {
     4) Click the button!
   */
 
-  // Just to get you started:
+  // Just to get you started, select junior_fix_green_content and assign it to fix_green_button:
   var fix_green_button = null;
 
 
