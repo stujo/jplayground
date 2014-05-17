@@ -8,31 +8,101 @@
     <p>Follow the instructions in app/assets/javascripts/grounds/senior.js and complete all the assignments</p>
     <ul>
       <li>
-        <a href="https://www.google.com/search?q=jquery+button+click+anonymous+function" target="_helpful">https://www.google.com/search?q=jquery+button+click+anonymous+function</a>
+        <a href="https://www.google.com/search?q=jquery+toggle+visibility" target="_helpful">https://www.google.com/search?q=jquery+toggle+visibility</a>
+      </li>
+      <li>
+        <a href="https://www.google.com/search?q=jquery+slide+toggle" target="_helpful">https://www.google.com/search?q=jquery+slide+toggle</a>
       </li>
     </ul>
   </div>
 </div>
 
 <div class="panel panel-default">
-  <div class="panel-heading">A) Toggle Visibility</div>
+  <div class="panel-heading">A) Fading Visibility</div>
+  <div class="panel-body">
+
+    <div class="row">
+      <div class="col-sm-2">
+        <button id="senior_toggle" class="btn btn-info">Toggle</button>
+      </div>
+      <div class="col-sm-8">
+        <div id="senior_visual_thing" class="jplay_initially_hidden">
+          <div class="progress">
+            <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+              60%
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="btn-group">
+          <button id="senior_fade_in" class="btn btn-info">Fade In</button>
+          <button id="senior_fade_out" class="btn btn-info">Fade Out</button>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div id="senior_fading_thing" class="jplay_initially_hidden well">
+          Well, well, well! Three holes in the ground!
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="panel panel-default">
+  <div class="panel-heading">A) Sliding Up and Down</div>
   <div class="panel-body">
 
     <div class="row">
       <div class="col-sm-4">
-        <button id="senior_toggle" class="btn btn-info">Toggle</button>
+        <div class="btn-group">
+          <button id="senior_slide_toggle" class="btn btn-info">Slide Toggle</button>
+        </div>
       </div>
       <div class="col-sm-8">
-        <img id="senior_visual_thing" class="img-responsive toggleable_image" src="http://i823.photobucket.com/albums/zz158/jgibson3825/smileyface.png"/>
+        <div id="senior_sliding_thing" class="jplay_initially_hidden">
+          <form class="form-horizontal" role="form">
+            <div class="form-group">
+              <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
+
+              <div class="col-sm-10">
+                <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="inputPassword3" class="col-sm-2 control-label">Password</label>
+
+              <div class="col-sm-10">
+                <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-sm-offset-2 col-sm-10">
+                <div class="checkbox">
+                  <label>
+                    <input type="checkbox"> Remember me
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-sm-offset-2 col-sm-10">
+                <button type="submit" class="btn btn-default">Sign in</button>
+              </div>
+            </div>
+          </form>
+        </div>
       </div>
     </div>
-
   </div>
 </div>
 
 <div class="panel panel-default">
   <div class="panel-heading">Solution</div>
   <div class="panel-body">
-    <img src="/images/senior-solution.png" class="img-responsive"/>
+    <img src="/images/senior-fade-slide-screenshot.png" class="img-responsive"/>
   </div>
 </div>
