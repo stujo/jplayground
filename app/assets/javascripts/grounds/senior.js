@@ -32,7 +32,9 @@ $(document).ready(function () {
     $("#senior_fading_thing").fadeOut();
   });
 
-  //4) Change the speed of the animation! Add a click handler to the button with id 'senior_slide_toggle'
+  //B) Sliding
+
+  //1) Change the speed of the animation! Add a click handler to the button with id 'senior_slide_toggle'
   // to slideToggle the element  $("#senior_sliding_thing") with a speed of "slow"
 
   $("#senior_slide_toggle").click(function () {

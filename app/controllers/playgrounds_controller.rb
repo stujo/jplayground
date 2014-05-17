@@ -7,7 +7,8 @@ class PlaygroundsController < ApplicationController
   PLAYGROUNDS = {:prek => 'Pre-K',
                  :kindergarden => 'Kindergarden',
                  :junior => 'Junior',
-                 :senior => 'Senior'
+                 :senior => 'Senior',
+                 :undergraduate => 'Undergraduate'
   }
 
   PLAYGROUNDS.each do |key, value|
