@@ -1,4 +1,6 @@
-"use strict;"/* Javascript for playground: Undergraduate */
+"use strict;"
+
+/* Javascript for playground: Undergraduate */
 
 $( document ).ready(function() {
 

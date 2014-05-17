@@ -4,11 +4,13 @@ class PlaygroundsController < ApplicationController
     @playgrounds = PLAYGROUNDS
   end
 
-  PLAYGROUNDS = {:prek => 'Pre-K',
-                 :kindergarden => 'Kindergarden',
-                 :junior => 'Junior',
-                 :senior => 'Senior',
-                 :undergraduate => 'Undergraduate'
+  PLAYGROUNDS = {
+      :prek => 'Pre-K',
+      :kindergarden => 'Kindergarden',
+      :junior => 'Junior',
+      :senior => 'Senior',
+      :undergraduate => 'Undergraduate',
+      :postgraduate => 'Postgraduate'
   }
 
   PLAYGROUNDS.each do |key, value|

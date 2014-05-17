@@ -1,3 +1,5 @@
+"use strict;"
+
 /* Javascript for playground: Kindergarden */
 
 $(document).ready(function () {
