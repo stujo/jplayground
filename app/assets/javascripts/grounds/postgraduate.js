@@ -10,14 +10,8 @@ $(document).ready(function () {
   Use parseInt and isNaN if you need them
    */
 
-  $('#postgraduate_mouseover_div').mouseover(function () {
-    var current = parseInt($('#postgraduate_mouseover_count').val());
-    if (isNaN(current)) {
-      current = 0;
-    }
-    current++;
-    $('#postgraduate_mouseover_count').val(current);
-  });
+  //TODO: HERE
+
 
 });
 

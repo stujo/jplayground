@@ -7,9 +7,7 @@ $( document ).ready(function() {
    1) Find the button with id junior_show_and_tell and assign it button and give it the thing_of_interest css class
    */
 
-  var button = $('#junior_show_and_tell');
-
-  button.addClass('thing_of_interest');
+  //TODO: HERE
 
   function say_hello()
   {
@@ -20,7 +18,7 @@ $( document ).ready(function() {
    2) Assign the say_hello function to the click handler of the button
   */
 
-  button.click(say_hello);
+  //TODO: HERE
 
   /*
   3) Click the show and tell button!
@@ -35,8 +33,7 @@ $( document ).ready(function() {
 
   fixer_button.click(function(){
     var should_be_green = $('#junior_green_thing');
-    // YOUR CODE HERE
-    should_be_green.addClass('jplay_green');
+    //TODO: HERE
   });
 
 
@@ -61,12 +58,8 @@ $( document ).ready(function() {
   var fix_green_button = null;
 
 
-  var fix_green_button = $('#junior_fix_green_content');
+  //TODO: HERE
 
-  fix_green_button.click(function() {
-    var green_thing = $('#junior_green_thing');
-    green_thing.html("I'm now Green")
-  });
 
 
 

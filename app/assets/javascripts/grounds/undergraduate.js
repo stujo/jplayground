@@ -25,10 +25,7 @@ $( document ).ready(function() {
 *
 * */
 
-  $('#undergraduate_progress_select').change( function(event) {
-     var percent = $(event.target).val() + '%';
-     $('#undergraduate_progress_bar').css({width: percent}).html(percent);
-  } )
+  //TODO: HERE
 
 });
 
