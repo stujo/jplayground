@@ -1,10 +1,10 @@
-"use strict;"/* Javascript for playground: Extra Credit */
+"use strict;"
+/* Javascript for playground: Extra Credit */
 
 
 
 //TODO: Don't forget to wrap your code in document ready!
 
-$( document ).ready(function() {
 
 
 // 1) Write a function called extra_lazy_bones_delay which takes a jQuery wrapped <li>
@@ -16,11 +16,7 @@ $( document ).ready(function() {
 
 //TODO: Write  function extra_lazy_bones
 
-    function extra_lazy_bones_delay(li)
-    {
-        var ul = li.parent();
-        li.appendTo( ul );
-    }
+
 
 // 2) READ THIS: http://api.jquery.com/on/
 
@@ -35,9 +31,5 @@ $( document ).ready(function() {
 
 //TODO: Add the deletgated click handler to ul#extra_todo_list for button.extra_postpone
 
-    $('ul#extra_todo_list').on('click','button.extra_postpone', function ()
-    {
-        extra_lazy_bones_delay($(this).closest('li'));
-    });
-});
+
 
