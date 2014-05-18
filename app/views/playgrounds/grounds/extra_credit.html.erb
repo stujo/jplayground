@@ -1,0 +1,57 @@
+<h1>Extra Credit</h1>
+
+
+
+<div class="panel panel-default">
+  <div class="panel-heading">Instructions and Helpful Links</div>
+  <div class="panel-body">
+    <p>Postpone your important to do items!</p>
+    <ul>
+      <li>Edit app/views/playgrounds/grounds/extra_credit.html.erb</li>
+    </ul>
+
+    <%
+       @helpful_links = {
+               'Delegated Events' => 'http://api.jquery.com/on/',
+               'Direct Parent' => 'http://api.jquery.com/parent/',
+               'Matching Ancestor' => 'http://api.jquery.com/closest/'
+       }
+
+    %>
+    <p>Helpful Links</p>
+    <ul>
+      <% @helpful_links.each do |label, link| %>
+          <li>
+            <a href="<%= link %>" target="_helpful"><%= label %>:&nbsp;<%= link %></a>
+          </li>
+      <% end %>
+    </ul>
+  </div>
+</div>
+
+
+<%
+   @todos = [
+           'Buy Sunglasses',
+           'Plan Heist',
+           'Pay Off Security Guard',
+           'ebay for Smoke Grenades',
+           'Check Alibi',
+           'Clear Internet Search History'
+   ]
+
+%>
+
+
+<div class="panel panel-default">
+  <div class="panel-heading">Sketchy ToDo List</div>
+  <div class="panel-body">
+    <ul id="extra_todo_list" class="list-group">
+      <% @todos.each do |todo| %>
+          <li class="list-group-item"><%= todo %>
+            <button class="extra_postpone btn-warning btn btn-xs">zzz</button>
+          </li>
+      <% end %>
+    </ul>
+  </div>
+</div>
