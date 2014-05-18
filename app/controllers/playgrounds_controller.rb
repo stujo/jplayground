@@ -10,7 +10,8 @@ class PlaygroundsController < ApplicationController
       :junior => 'Junior',
       :senior => 'Senior',
       :undergraduate => 'Undergraduate',
-      :postgraduate => 'Postgraduate'
+      :postgraduate => 'Postgraduate',
+      :extra_credit => 'Extra Credit'
   }
 
   PLAYGROUNDS.each do |key, value|
