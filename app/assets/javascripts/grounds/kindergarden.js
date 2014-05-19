@@ -20,7 +20,7 @@ $(document).ready(function () {
   /*
    B) Find the balls
 
-   1) Select all the balls (class="kindergarden_ball") that are directly inside id='kindergarden_ball_container_b'
+   1) Select all the balls (class="ball") that are directly inside id='kindergarden_ball_container_b'
    so that those which are inside of the red_bucket are not included
    */
 
@@ -36,7 +36,7 @@ $(document).ready(function () {
 
   /*
    C) Hide the ball
-   1) Find the first ball (class="kindergarden_ball") in the red_bucket inside id='kindergarden_ball_container_c'
+   1) Find the first ball (class="ball") in the red_bucket inside id='kindergarden_ball_container_c'
 
    Remember that this is kindergarden_ball_container_c (with a c at the end)
 
