@@ -34,7 +34,7 @@ $(document).ready(function () {
   balls.addClass('thing_of_interest');
 
   /*
-   C) Hide the ball
+   C) Find the Bucket Ball
    1) Find the first ball (class="kindergarden_ball") in the red_bucket inside id='kindergarden_ball_container_c'
 
    Remember that this is kindergarden_ball_container_c (with a c at the end)

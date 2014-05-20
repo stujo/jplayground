@@ -68,7 +68,5 @@ $( document ).ready(function() {
     green_thing.html("I'm now Green")
   });
 
-
-
 });
 
