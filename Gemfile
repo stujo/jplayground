@@ -43,4 +43,11 @@ gem 'spring',        group: :development
 
 gem 'bootstrap-sass', '~> 3.1.1'
 
-
+#http://railscasts.com/episodes/257-request-specs-and-capybara
+group :development, :test do
+  gem 'rspec-rails'
+  gem 'capybara'
+  gem 'poltergeist'
+  # gem 'launchy'
+  # gem 'database_cleaner'
+end
