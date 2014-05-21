@@ -7,23 +7,27 @@ $( document ).ready(function() {
 
 // A) Email Address Field
 // 1) Assign emailField to be the jQuery object for the input field with id='prek_email_address'
-  var emailField = null;
+  var emailField = $('#prek_email_address');
+
 
 // 2) Change the placeholder attribute of the field to "Email Address"
 
-  //TODO: HERE
+  emailField.attr('placeholder', 'Email Address');
 
 // B) Change CSS Dynamically
 // 1) Assign greenThing to be the jQuery object for the div with id prek_green_thing
 
-  var greenThing = null;
+  var greenThing = $('#prek_green_thing');
   //TODO: HERE
 
 // 2) Assign the css class 'jplay_green' to greenThing
   //TODO: HERE
+  greenThing.addClass('jplay_green')
 
 // 3) Change the HTML of the greenThing to be I'm Green
   //TODO: HERE
+  greenThing.html("I'm Green")
+
 
 });
 
