@@ -8,12 +8,14 @@ $(document).ready(function () {
 
    1) Select all divs with the 'thing' class which are inside the div with id='kindergarden_thing_container'
    */
-  var things = null;
+  var things = $('.kindergarden_thing_container > .thing');
   //TODO: HERE
 
   /*
    2) Assign the thing_of_interest class to all the 'things'
    */
+
+   things.addClass('thing_of_interest');
 
   //TODO: HERE
 
